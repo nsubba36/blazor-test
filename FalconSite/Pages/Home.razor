@@ -1,0 +1,110 @@
+@page "/"
+
+<MudAppBar Elevation="2">
+    <MudText Typo="Typo.h6">Nishan</MudText>
+
+    <MudSpacer />
+
+    <MudButton Href="#home" Color="Color.Inherit">Home</MudButton>
+    <MudButton Href="#about" Color="Color.Inherit">About</MudButton>
+    <MudButton Href="#projects" Color="Color.Inherit">Projects</MudButton>
+    <MudButton Href="#skills" Color="Color.Inherit">Skills</MudButton>
+    <MudButton Href="#contact" Color="Color.Inherit">Contact</MudButton>
+</MudAppBar>
+
+<section id="home" class="hero">
+    <MudContainer MaxWidth="MaxWidth.Medium">
+        <MudStack AlignItems="AlignItems.Center" Spacing="3">
+            <MudText Typo="Typo.h2" Align="Align.Center">
+                Backend Developer
+            </MudText>
+
+            <MudText Typo="Typo.h6" Align="Align.Center">
+                Information Systems graduate student focused on backend engineering,
+                databases, distributed systems, and modern web application development.
+            </MudText>
+
+            <MudButton Variant="Variant.Filled"
+                       Color="Color.Primary"
+                       Size="Size.Large"
+                       Href="#projects">
+                View Projects
+            </MudButton>
+        </MudStack>
+    </MudContainer>
+</section>
+
+<MudContainer MaxWidth="MaxWidth.Large">
+
+    <section id="about" class="section">
+        <MudText Typo="Typo.h3" Align="Align.Center" Class="mb-6">
+            About Me
+        </MudText>
+
+        <MudText Typo="Typo.body1" Align="Align.Center">
+            I enjoy building scalable backend systems using Java Spring Boot,
+            PostgreSQL, Oracle SQL, and .NET technologies. My interests include
+            system architecture, APIs, database design, and cloud development.
+        </MudText>
+    </section>
+
+    <section id="projects" class="section">
+        <MudText Typo="Typo.h3" Align="Align.Center" Class="mb-6">
+            Projects
+        </MudText>
+
+        <MudGrid Spacing="4">
+            <MudItem xs="12" md="4">
+                <MudCard>
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">HomeBase</MudText>
+                        <MudText>
+                            Inventory and expense management platform built using
+                            Java Enterprise, JSP, REST APIs, and JPA.
+                        </MudText>
+                    </MudCardContent>
+                </MudCard>
+            </MudItem>
+
+            <MudItem xs="12" md="4">
+                <MudCard>
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">Turtle Tracker</MudText>
+                        <MudText>
+                            Spring Boot CRUD application with PostgreSQL,
+                            authentication, and role-based security.
+                        </MudText>
+                    </MudCardContent>
+                </MudCard>
+            </MudItem>
+
+            <MudItem xs="12" md="4">
+                <MudCard>
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">Parking Payment System</MudText>
+                        <MudText>
+                            Oracle SQL and PL/SQL parking management database
+                            with procedures, triggers, and reporting.
+                        </MudText>
+                    </MudCardContent>
+                </MudCard>
+            </MudItem>
+        </MudGrid>
+    </section>
+
+</MudContainer>
+
+<section id="contact" class="contact-section">
+    <MudContainer MaxWidth="MaxWidth.Medium">
+        <MudText Typo="Typo.h3" Align="Align.Center" Class="mb-6">
+            Contact
+        </MudText>
+
+        <MudStack AlignItems="AlignItems.Center" Spacing="1">
+            <MudText>Email: nishan@example.com</MudText>
+            <MudText>LinkedIn: linkedin.com/in/nishansubba</MudText>
+            <MudText>GitHub: github.com/nissubba1</MudText>
+        </MudStack>
+    </MudContainer>
+</section>
+
